@@ -4,7 +4,10 @@ from assets.table_data import TableData
 def main() -> None:
     td = TableData()
     td.table = td.locate_table()
+    # td.headings = td.get_column_names()
     print(td.table)
+    # print(td.headings)
+    td.close_driver()
 
 
 
